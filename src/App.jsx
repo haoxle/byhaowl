@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import News from "./Pages/News/News";
 import Shop from "./Pages/Shop/Shop";
+import Logo from "./Component/Logo/Logo";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         path="/"
         element={
           <>
+            <Logo />
             <Nav />
             <Home />
           </>

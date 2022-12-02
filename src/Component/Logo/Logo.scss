@@ -1,0 +1,21 @@
+@use "../../styles/_variables" as *;
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 7rem;
+  padding: 0.5rem;
+  margin: 1rem;
+
+  .byHaowl-logo {
+    height: 4rem;
+  }
+
+  .byHaowl-title {
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+}
