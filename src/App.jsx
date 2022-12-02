@@ -24,6 +24,7 @@ const App = () => {
         path="/about"
         element={
           <>
+            <Logo />
             <Nav />
             <About />
           </>
@@ -33,6 +34,8 @@ const App = () => {
         path="/news"
         element={
           <>
+            {" "}
+            <Logo />
             <Nav />
             <News />
           </>
@@ -42,6 +45,8 @@ const App = () => {
         path="/shop"
         element={
           <>
+            {" "}
+            <Logo />
             <Nav />
             <Shop />
           </>

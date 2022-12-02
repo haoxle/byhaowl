@@ -1,5 +1,5 @@
 import "./Logo.scss";
-import haoxle from "../../Assets/logo-reverse.png";
+import haoxle from "../../Assets/logo.png";
 const Logo = () => {
   return (
     <div className="logo-container">

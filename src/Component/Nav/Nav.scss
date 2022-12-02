@@ -1,0 +1,22 @@
+@use "../../styles/_variables" as *;
+
+.nav-container {
+  background-color: $secondary-colour;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  //   background-color: transparent;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  background-color: transparent;
+}
+
+a:hover {
+  background-color: $primary-colour;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+}
