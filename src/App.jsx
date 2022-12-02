@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Routes>
       <Route
-        path="/home"
+        path="/"
         element={
           <>
             <Nav />
