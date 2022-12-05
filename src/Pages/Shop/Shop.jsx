@@ -1,8 +1,26 @@
 import "./Shop.scss";
 import musk from "../../Assets/musk.jpg";
+import { useEffect, useState } from "react";
 const Shop = () => {
+  const [candles, setCandles] = useState([]);
+
+  const getCandles = async () => {
+    const response = await fetch("http://localhost:8080/candles");
+    const data = await response.json();
+    setCandles(data);
+  };
+
+  useEffect(() => {
+    getCandles();
+  }, []);
+
+  const candle = candles.map((item) => {
+    return <h1>{item.name}</h1>;
+  });
+
   return (
     <>
+      {candle}
       <div className="product-main">
         <div>
           <img className="musk-candle" src={musk} alt="musk" />
