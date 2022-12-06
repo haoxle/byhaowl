@@ -9,6 +9,7 @@ import ItemInfo from "./Component/ItemInfo/ItemInfo";
 import { useEffect, useState } from "react";
 import { getCandles } from "./utils/apiUtils";
 import image from "./data/image";
+import Footer from "./Component/Footer/Footer";
 
 const App = () => {
   const [candles, setCandles] = useState([]);
@@ -36,6 +37,7 @@ const App = () => {
             <Logo />
             <Nav />
             <Home />
+            <Footer />
           </>
         }
       />
@@ -47,6 +49,7 @@ const App = () => {
             <Logo />
             <Nav />
             <News />
+            <Footer />
           </>
         }
       />
@@ -58,6 +61,7 @@ const App = () => {
             <Logo />
             <Nav />
             <Shop />
+            <Footer />
           </>
         }
       />

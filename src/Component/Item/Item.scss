@@ -9,6 +9,9 @@
     height: 30rem;
     width: 30rem;
   }
+  &__candle:hover {
+    opacity: 0.6;
+  }
   &__info {
     display: flex;
     justify-content: space-around;

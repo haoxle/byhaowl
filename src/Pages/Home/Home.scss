@@ -62,3 +62,24 @@
     }
   }
 }
+
+.logo-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0 10rem 0rem;
+
+  .byHaowl-logo {
+    height: 10rem;
+  }
+
+  .byHaowl-title {
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+  }
+}
