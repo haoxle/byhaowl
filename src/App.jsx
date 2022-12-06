@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { getCandles } from "./utils/apiUtils";
 import image from "./data/image";
 import Footer from "./Component/Footer/Footer";
+import Terms from "./Pages/Terms/Terms";
 
 const App = () => {
   const [candles, setCandles] = useState([]);
@@ -71,6 +72,16 @@ const App = () => {
           <>
             <Logo />
             <ItemInfo candles={singleCandle} />
+          </>
+        }
+      />
+      <Route
+        path="/terms"
+        element={
+          <>
+            <Logo />
+            <Nav />
+            <Terms />
           </>
         }
       />

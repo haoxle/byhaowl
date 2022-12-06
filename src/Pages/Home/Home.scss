@@ -24,11 +24,12 @@
 .work {
   display: flex;
   align-items: center;
-  background-color: #031927;
+  background-color: $secondary_colour;
   height: 45rem;
   margin: 5rem 0 5rem 0;
   padding-bottom: 3rem;
   .work-img {
+    background-color: $secondary_colour;
     margin-left: 10rem;
     &__img {
       height: 35rem;
@@ -47,18 +48,21 @@
     }
   }
   .work-info {
-    color: white;
+    background-color: transparent;
+    color: $tertiary_colour;
     font-size: 2rem;
     right: 10rem;
     bottom: -15rem;
     position: absolute;
     text-align: right;
     .shop-link:hover {
-      color: #708d81;
+      color: $primary-colour;
     }
+
     .shop-link {
+      background-color: $secondary_colour;
       text-decoration: none;
-      color: white;
+      color: $tertiary_colour;
     }
   }
 }

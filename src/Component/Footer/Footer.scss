@@ -1,6 +1,17 @@
 @use "../../styles/_variables" as *;
 
 .footer-container {
-  background-color: #708d81;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-colour;
   height: 10rem;
+  .termsAndConditions {
+    background-color: transparent;
+    font-size: 2rem;
+    font-family: $font-main;
+    text-decoration: none;
+    color: $tertiary_colour;
+  }
 }
