@@ -1,6 +1,9 @@
 import "./Shop.scss";
 import musk from "../../Assets/musk.jpg";
 import { useEffect, useState } from "react";
+import image from "../../data/image";
+import Item from "../../Component/Item/Item";
+
 const Shop = () => {
   const [candles, setCandles] = useState([]);
 
@@ -14,8 +17,20 @@ const Shop = () => {
     getCandles();
   }, []);
 
-  const candle = candles.map((item) => {
-    return <h1>{item.name}</h1>;
+  const mapped = candles.map((c) => ({
+    ...c,
+    ...image.find((i) => i.name === c.name),
+  }));
+  const candle = mapped.map((item, i) => {
+    return (
+      <Item
+        key={`${i} ${item.name}`}
+        candle={item.src}
+        candleName={item.name}
+        price={item.price}
+        name={item.name}
+      />
+    );
   });
 
   return (

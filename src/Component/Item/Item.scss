@@ -1,0 +1,11 @@
+@use "../../styles/_variables" as *;
+
+.product {
+  display: flex;
+  flex-direction: column;
+
+  &__candle {
+    height: 20rem;
+    width: 20rem;
+  }
+}
