@@ -1,0 +1,68 @@
+@use "../../styles/_variables" as *;
+
+.candleInfo-container {
+  display: flex;
+  padding: 1rem;
+  .image-container {
+    &__candle {
+      height: 65rem;
+      width: 65rem;
+    }
+  }
+  .information-container {
+    margin-top: 2rem;
+    width: 100%;
+    .link-container {
+      margin: 0 4rem 0 4rem;
+      padding: 0 0 1rem 1rem;
+
+      &__back {
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: $font-text;
+        letter-spacing: 0.1rem;
+      }
+      .link-container__back:hover {
+        color: #6d435a;
+      }
+    }
+    .productMain {
+      margin: 2rem 4rem 2rem 4rem;
+      padding: 0 0 1rem 1rem;
+      border-bottom: 0.1rem solid black;
+      &__name {
+        font-size: 3rem;
+        font-family: $font-text;
+        letter-spacing: 0.2rem;
+        padding-bottom: 2.5rem;
+      }
+      &__price {
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: $font-text;
+        letter-spacing: 0.1rem;
+        padding-bottom: 1.5rem;
+      }
+    }
+
+    .productDesc,
+    .productMisc {
+      margin: 0 4rem 3rem 4rem;
+      padding: 0 0 2rem 1rem;
+      border-bottom: 0.1rem solid black;
+      span {
+        font-family: $font-text;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      p {
+        font-family: $font-text;
+        font-size: 2rem;
+        font-weight: 200;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

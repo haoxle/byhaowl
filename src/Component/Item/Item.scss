@@ -5,17 +5,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 30rem;
-  &__image {
-  }
-  &__image:hover {
-    text-decoration: none;
-    background-color: none;
-  }
   &__candle {
-    height: 25rem;
-    width: 25rem;
-    align-self: center;
-    object-fit: cover;
+    height: 30rem;
+    width: 30rem;
   }
   &__info {
     display: flex;

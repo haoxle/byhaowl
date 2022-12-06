@@ -5,14 +5,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 2rem;
+  height: 3rem;
 }
 
 .nav__title {
   color: white;
   text-decoration: none;
-  //   background-color: transparent;
   padding: 0.3rem 1rem 0.3rem 1rem;
+  font-size: 1.55rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-family: $font-main;
   background-color: transparent;
 }
 

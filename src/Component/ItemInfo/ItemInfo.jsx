@@ -24,59 +24,64 @@ const ItemInfo = ({ candles }) => {
   } = currentCandle[0];
 
   return (
-    <div>
-      <div>
-        <img src={src} alt={name} />
+    <div className="candleInfo-container">
+      <div className="image-container">
+        <img className="image-container__candle" src={src} alt={name} />
       </div>
-      <div>
-        <div>
-          <Link to="/shop">Back to Shop</Link>
+      <div className="information-container">
+        <div className="link-container">
+          <Link className="link-container__back" to="/shop">
+            Back to Shop
+          </Link>
         </div>
-        <div>
-          <h1>{name}</h1>
-          <h2>{price}</h2>
+        <div className="productMain">
+          <h1 className="productMain__name">{name}</h1>
+          <h2 className="productMain__price">£{price}.00</h2>
         </div>
-        <div>
+        <div className="productDesc">
           <p>
-            <span>DESCRIPTION: </span>
+            <span>
+              DESCRIPTION: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp; &nbsp;
+            </span>
             {description}
           </p>
           <p>
-            <span>FRAGRANCE NOTES: </span>
+            <span>FRAGRANCE NOTES: &nbsp;&nbsp;&nbsp;</span>
             {fragranceNotes}
           </p>
         </div>
-        <div>
+        <div className="productMisc">
           <p>
-            <span>ID: </span>
+            <span>ID: &nbsp;&nbsp;</span>
             {id}
           </p>
           <p>
-            <span>BURN TIME: </span>
+            <span>BURN TIME:&nbsp;&nbsp; </span>
             {burnTime}
           </p>
           <p>
-            <span>BLEND: </span>
+            <span>BLEND: &nbsp;&nbsp;</span>
             {blend}
           </p>
           <p>
-            <span>VESSEL: </span>
+            <span>VESSEL: &nbsp;&nbsp;</span>
             {vessel}
           </p>
           <p>
-            <span>WICK: </span>
+            <span>WICK: &nbsp;&nbsp;</span>
             {wick}
           </p>
           <p>
-            <span>WEIGHT: </span>
-            {weight}
+            <span>WEIGHT: &nbsp;&nbsp;</span>
+            {weight} 200kg
           </p>
           <p>
-            <span>DIMENSION: </span>
+            <span>DIMENSION:&nbsp;&nbsp; </span>
             {dimension}
           </p>
           <p>
-            <span>COLOUR: </span>
+            <span>COLOUR: &nbsp;&nbsp;</span>
             {colour}
           </p>
         </div>
