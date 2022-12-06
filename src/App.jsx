@@ -2,7 +2,6 @@ import "./App.scss";
 import Nav from "./Component/Nav/Nav";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import News from "./Pages/News/News";
 import Shop from "./Pages/Shop/Shop";
 import Logo from "./Component/Logo/Logo";
 import ItemInfo from "./Component/ItemInfo/ItemInfo";
@@ -11,6 +10,7 @@ import { getCandles } from "./utils/apiUtils";
 import image from "./data/image";
 import Footer from "./Component/Footer/Footer";
 import Terms from "./Pages/Terms/Terms";
+import Affirm from "./Pages/News/Affirm";
 
 const App = () => {
   const [candles, setCandles] = useState([]);
@@ -43,13 +43,13 @@ const App = () => {
         }
       />
       <Route
-        path="/news"
+        path="/affirm"
         element={
           <>
             {" "}
             <Logo />
             <Nav />
-            <News />
+            <Affirm />
             <Footer />
           </>
         }

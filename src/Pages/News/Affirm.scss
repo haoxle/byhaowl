@@ -1,0 +1,14 @@
+@use "../../styles/_variables" as *;
+.affirm-container {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .affirm-item {
+    margin: 2rem;
+    .affirm-image {
+      height: 35rem;
+      width: 35rem;
+    }
+  }
+}

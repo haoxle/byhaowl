@@ -24,7 +24,10 @@ const Home = () => {
           >
             instagram
           </a>
-          &nbsp; or my shop for regular updates
+          &nbsp; or my shop for regular updates. <br /> My work is inspired
+          through my own journey of self-love, within this website you can find
+          affirmations that resonate with me. I hope my products and my thoughts
+          resonates with you.
         </div>
       </div>
 

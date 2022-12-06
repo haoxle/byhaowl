@@ -7,8 +7,8 @@ const Nav = () => {
       <NavLink className="nav__title" to={"/"}>
         Home
       </NavLink>
-      <NavLink className="nav__title" to={"/news"}>
-        News
+      <NavLink className="nav__title" to={"/affirm"}>
+        Words of Affirmation
       </NavLink>
       <NavLink className="nav__title" to={"/shop"}>
         Shop
