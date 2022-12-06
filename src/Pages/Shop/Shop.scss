@@ -1,28 +1,5 @@
-.product-main {
+.product-container {
   display: flex;
-  justify-content: center;
-  margin: 10rem;
-  .musk-candle {
-    object-fit: cover;
-    height: 30rem;
-    width: 30rem;
-  }
-  .musk-price {
-    margin: 5rem;
-    width: 30rem;
-  }
-}
-
-.musk-description {
-  margin: 10rem;
-  .information-section {
-    margin: 5rem;
-    .musk-information tr:nth-child(even) {
-      background-color: #f2f2f2;
-      font-size: 1rem;
-    }
-    .musk-information th {
-      font-size: 2rem;
-    }
-  }
+  justify-content: space-around;
+  padding: 3rem;
 }
