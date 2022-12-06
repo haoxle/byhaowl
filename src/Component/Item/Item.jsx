@@ -5,7 +5,7 @@ const Item = ({ candle, candleName, price, name, id }) => {
   return (
     <>
       <div className="product">
-        <Link to={`/candle/${id}`}>
+        <Link className="product__image" to={`/candle/${id}`}>
           <img className="product__candle" src={candle} alt={candleName} />
         </Link>
         <div className="product__info">
