@@ -1,0 +1,64 @@
+@use "../../styles/_variables" as *;
+
+.profile {
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+  padding: 5rem;
+  &__img {
+    height: 30rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+  }
+  &__desc {
+    width: 50rem;
+    align-self: center;
+    font-size: 2rem;
+    font-family: $font-text;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    padding: 4rem;
+  }
+}
+
+.work {
+  display: flex;
+  align-items: center;
+  background-color: #031927;
+  height: 45rem;
+  margin: 5rem 0 5rem 0;
+  padding-bottom: 3rem;
+  .work-img {
+    margin-left: 10rem;
+    &__img {
+      height: 35rem;
+      width: 35rem;
+      border-radius: 5rem;
+    }
+    &__img2 {
+      margin-top: 15rem;
+      object-fit: fill;
+      border-radius: 20rem;
+      height: 25rem;
+      width: 25rem;
+      position: absolute;
+      left: 30rem;
+      // top: 70rem;
+    }
+  }
+  .work-info {
+    color: white;
+    font-size: 2rem;
+    right: 10rem;
+    bottom: -15rem;
+    position: absolute;
+    text-align: right;
+    .shop-link:hover {
+      color: #708d81;
+    }
+    .shop-link {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
