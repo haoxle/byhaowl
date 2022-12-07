@@ -12,7 +12,7 @@ const CandleTool = () => {
       body: JSON.stringify(candle),
     });
     if (result.ok) {
-      alert("Added greeting");
+      alert("Added Candle");
     } else {
       const message = await result.text();
       alert(message);
@@ -31,7 +31,7 @@ const CandleTool = () => {
       }
     );
     if (result.ok) {
-      alert("Greeting updated");
+      alert("Candle updated");
     } else {
       const message = await result.text();
       alert(message);
@@ -50,7 +50,7 @@ const CandleTool = () => {
     );
 
     if (result.ok) {
-      alert("Greeting deleted");
+      alert("Candle deleted");
     } else {
       const message = await result.text();
       alert(message);
@@ -62,6 +62,7 @@ const CandleTool = () => {
     name: "",
     fragranceNotes: "",
     description: "",
+    vessel: "",
   };
 
   return (

@@ -53,6 +53,15 @@ const Form = ({ defaultFormState, handleSubmit, formTitle }) => {
             setCandle({ ...candle, description: event.target.value })
           }
         />
+        <input
+          className="form-container__input"
+          type="text"
+          placeholder="Vessel"
+          value={candle.vessel}
+          onInput={(event) =>
+            setCandle({ ...candle, vessel: event.target.value })
+          }
+        />
         <button type="submit" className="form-container__button">
           Submit
         </button>
