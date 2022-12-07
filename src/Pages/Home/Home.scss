@@ -3,17 +3,17 @@
 .profile {
   display: flex;
   justify-content: center;
-  height: 30rem;
+  height: 25rem;
   padding: 5rem;
   &__img {
-    height: 30rem;
+    height: 25rem;
     border-radius: 5rem;
     margin-right: 2rem;
   }
   &__desc {
     width: 50rem;
     align-self: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: $font-text;
     letter-spacing: 0.1rem;
     word-spacing: 0.5rem;
@@ -25,34 +25,34 @@
   display: flex;
   align-items: center;
   background-color: $secondary_colour;
-  height: 45rem;
+  height: 40rem;
   margin: 5rem 0 5rem 0;
   padding-bottom: 3rem;
   .work-img {
     background-color: $secondary_colour;
     margin-left: 10rem;
     &__img {
-      height: 35rem;
-      width: 35rem;
+      height: 30rem;
+      width: 30rem;
       border-radius: 5rem;
     }
     &__img2 {
       margin-top: 15rem;
       object-fit: fill;
       border-radius: 20rem;
-      height: 25rem;
-      width: 25rem;
+      height: 20rem;
+      width: 20rem;
       position: absolute;
       left: 30rem;
       // top: 70rem;
     }
   }
   .work-info {
+    margin-top: 15rem;
     background-color: transparent;
     color: $tertiary_colour;
-    font-size: 2rem;
-    right: 10rem;
-    bottom: -15rem;
+    font-size: 1.7rem;
+    right: 6rem;
     position: absolute;
     text-align: right;
     .shop-link:hover {

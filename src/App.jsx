@@ -10,7 +10,7 @@ import { getCandles } from "./utils/apiUtils";
 import image from "./data/image";
 import Footer from "./Component/Footer/Footer";
 import Terms from "./Pages/Terms/Terms";
-import Affirm from "./Pages/News/Affirm";
+import Affirm from "./Pages/Affirmations/Affirm";
 import Cart from "./Pages/Cart/Cart";
 import CandleTool from "./Pages/CandleTool/CandleTool";
 
