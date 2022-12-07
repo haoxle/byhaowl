@@ -1,0 +1,10 @@
+@use "../../styles/_variables" as *;
+
+.searchBar__input {
+  margin: 1rem;
+  border-radius: 20rem;
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+  border: 2px solid black;
+}

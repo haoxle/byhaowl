@@ -25,9 +25,41 @@
     justify-content: flex-end;
     &__amount,
     &__info {
+      margin-top: 0.3rem;
       margin-left: 2rem;
       font-family: $font-text;
       font-size: 2rem;
+      font-weight: 600;
+    }
+    &__btn {
+      color: white;
+      background-color: black;
+      margin-left: 3rem;
+      border-radius: 0.51rem;
+      font-family: $font-text;
+      font-size: 1.5rem;
+      height: 3rem;
+      width: 8rem;
+    }
+  }
+  .checkout-quantity {
+    display: flex;
+    &__btn {
+      width: 2rem;
+      border-radius: 1rem;
+      margin: 0 1rem 0 1rem;
+      font-size: 1.5rem;
+    }
+    &__num {
+      font-family: $font-text;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    &__remove {
+      border: none;
+      font-family: $font-text;
+      font-size: 1.5rem;
       font-weight: 600;
     }
   }

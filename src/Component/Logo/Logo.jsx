@@ -2,7 +2,16 @@ import "./Logo.scss";
 import haoxle from "../../Assets/logo.png";
 import { NavLink } from "react-router-dom";
 import bag from "../../Assets/shopping-bag.png";
+import { useContext } from "react";
+import { Cartcontext } from "../../context/Context";
 const Logo = () => {
+  const globalState = useContext(Cartcontext);
+  const state = globalState.state;
+  const getQuantity = () => {
+    if (state.length === 0) {
+      return "";
+    } else return state.length;
+  };
   return (
     <NavLink className="logoNav" to="/">
       <div className="logo-container">
@@ -18,7 +27,7 @@ const Logo = () => {
               alt="shopping cart"
             />{" "}
           </NavLink>
-          <div className="shopping-quantity">1</div>
+          <div className="shopping-quantity">{getQuantity()}</div>
         </button>
       </div>
     </NavLink>

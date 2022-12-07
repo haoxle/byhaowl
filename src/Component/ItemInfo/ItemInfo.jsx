@@ -27,7 +27,11 @@ const ItemInfo = ({ candles }) => {
   const globalState = useContext(Cartcontext);
   const dispatch = globalState.dispatch;
   console.log(globalState);
-  currentCandle.quantity = 1;
+  //
+  const handleAddToBag = () => {
+    currentCandle[0].quantity = 1;
+    dispatch({ type: "ADD", payload: currentCandle });
+  };
   return (
     <div className="candleInfo-container">
       <div className="image-container">
@@ -40,7 +44,7 @@ const ItemInfo = ({ candles }) => {
           </Link>
           <button
             //or currentCandle?
-            onClick={() => dispatch({ type: "ADD", payload: currentCandle })}
+            onClick={handleAddToBag}
             className="link-container__bag"
           >
             Add to Bag
