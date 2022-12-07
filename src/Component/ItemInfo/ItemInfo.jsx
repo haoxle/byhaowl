@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import "./ItemInfo.scss";
-
+import { useContext } from "react";
+import { Cartcontext } from "../../context/Context";
 const ItemInfo = ({ candles }) => {
   const { candleId } = useParams();
 
@@ -23,6 +24,10 @@ const ItemInfo = ({ candles }) => {
     colour,
   } = currentCandle[0];
 
+  const globalState = useContext(Cartcontext);
+  const dispatch = globalState.dispatch;
+  console.log(globalState);
+  currentCandle.quantity = 1;
   return (
     <div className="candleInfo-container">
       <div className="image-container">
@@ -33,7 +38,13 @@ const ItemInfo = ({ candles }) => {
           <Link className="link-container__back" to="/shop">
             Back to Shop
           </Link>
-          <button className="link-container__bag">Add to Bag</button>
+          <button
+            //or currentCandle?
+            onClick={() => dispatch({ type: "ADD", payload: currentCandle })}
+            className="link-container__bag"
+          >
+            Add to Bag
+          </button>
         </div>
         <div className="productMain">
           <h1 className="productMain__name">{name}</h1>

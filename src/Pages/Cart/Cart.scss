@@ -1,1 +1,34 @@
 @use "../../styles/_variables" as *;
+
+.checkout-basket {
+  margin-top: 3rem;
+  .checkout-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .checkout-img {
+      height: 10rem;
+    }
+    .checkout-price,
+    .checkout-name {
+      font-family: $font-text;
+      font-size: 2rem;
+      font-weight: 600;
+      width: 10rem;
+    }
+  }
+  .checkout-total {
+    border-top: 0.1rem solid black;
+    padding: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    &__amount,
+    &__info {
+      margin-left: 2rem;
+      font-family: $font-text;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}

@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import image from "../../data/image";
 import Item from "../../Component/Item/Item";
 import { getCandles } from "../../utils/apiUtils";
-import { useContext } from "react";
-import { Cartcontext } from "../../context/Context";
 
 const Shop = () => {
   const [candles, setCandles] = useState([]);
@@ -17,9 +15,6 @@ const Shop = () => {
   useEffect(() => {
     getData();
   }, []);
-
-  const globalState = useContext(Cartcontext);
-  console.log(globalState);
   const mapped = candles.map((c) => ({
     ...c,
     ...image.find((i) => i.name === c.name),
