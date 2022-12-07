@@ -8,9 +8,16 @@ const Logo = () => {
       <div className="logo-container">
         <div className="logo-container__img">
           <img className="byHaowl-logo" src={haoxle} alt="logo" />
-        </div>
+        </div>{" "}
         <button className="basket">
-          <img className="shopping-basket" src={bag} alt="shopping cart" />
+          <NavLink to={"/cart"}>
+            {" "}
+            <img
+              className="shopping-basket"
+              src={bag}
+              alt="shopping cart"
+            />{" "}
+          </NavLink>
           <div className="shopping-quantity">1</div>
         </button>
       </div>

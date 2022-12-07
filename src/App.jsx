@@ -11,6 +11,7 @@ import image from "./data/image";
 import Footer from "./Component/Footer/Footer";
 import Terms from "./Pages/Terms/Terms";
 import Affirm from "./Pages/News/Affirm";
+import Cart from "./Pages/Cart/Cart";
 
 const App = () => {
   const [candles, setCandles] = useState([]);
@@ -82,6 +83,16 @@ const App = () => {
             <Logo />
             <Nav />
             <Terms />
+          </>
+        }
+      />{" "}
+      <Route
+        path="/cart"
+        element={
+          <>
+            <Logo />
+            <Nav />
+            <Cart />
           </>
         }
       />
