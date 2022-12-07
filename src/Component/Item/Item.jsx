@@ -12,7 +12,6 @@ const Item = ({ candle, candleName, price, name, id }) => {
           <h1 className="product__info--price">£{price}.00</h1>
           <h1 className="product__info--name">{name}</h1>
         </div>
-        <button className="product__bag">Add to Bag</button>
       </div>
     </>
   );

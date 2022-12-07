@@ -33,6 +33,7 @@ const ItemInfo = ({ candles }) => {
           <Link className="link-container__back" to="/shop">
             Back to Shop
           </Link>
+          <button className="link-container__bag">Add to Bag</button>
         </div>
         <div className="productMain">
           <h1 className="productMain__name">{name}</h1>

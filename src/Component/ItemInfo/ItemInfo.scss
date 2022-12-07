@@ -23,9 +23,20 @@
         font-weight: 500;
         font-family: $font-text;
         letter-spacing: 0.1rem;
+        padding-right: 1rem;
       }
-      .link-container__back:hover {
+      .link-container__back:hover,
+      .link-container__bag:hover {
         color: #6d435a;
+      }
+      &__bag {
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: $font-text;
+        letter-spacing: 0.1rem;
+        padding-left: 1rem;
+        border-left: 0.1rem solid black;
       }
     }
     .productMain {
