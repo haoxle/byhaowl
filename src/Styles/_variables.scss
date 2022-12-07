@@ -8,3 +8,31 @@ $secondary_colour: #031927;
 $tertiary_colour: #ffe7d7;
 $quaternary_colour: #fff6f1;
 $quinary_colour: #6d435a;
+
+$color-white: #ffffff;
+$color-black: #2e2e2e;
+
+$primary-color: #5828c7;
+$color-secondary: #747a8e;
+$color-secondary-light: lighten($color-secondary, 20%);
+$color-secondary-dark: darken($color-secondary, 20%);
+
+@mixin button {
+  display: inline-block;
+  background: $primary-color;
+  border: 1px solid darken($primary-color, 5%);
+  padding: 0.5em 2em;
+  color: $color-white;
+  margin-right: 0.5em;
+  box-shadow: inset 0px 1px 0px fadeout($color-white, 80%);
+  &:hover {
+    background: lighten($primary-color, 5%);
+  }
+  &:active {
+    background: $primary-color;
+    box-shadow: inset 0px 1px 1px fadeout($color-black, 90%);
+  }
+  &:focus {
+    outline: none;
+  }
+}

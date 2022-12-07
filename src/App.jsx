@@ -12,6 +12,7 @@ import Footer from "./Component/Footer/Footer";
 import Terms from "./Pages/Terms/Terms";
 import Affirm from "./Pages/News/Affirm";
 import Cart from "./Pages/Cart/Cart";
+import CandleTool from "./Pages/CandleTool/CandleTool";
 
 const App = () => {
   const [candles, setCandles] = useState([]);
@@ -93,6 +94,16 @@ const App = () => {
             <Logo />
             <Nav />
             <Cart />
+          </>
+        }
+      />
+      <Route
+        path="/candletool"
+        element={
+          <>
+            <Logo />
+            <Nav />
+            <CandleTool />
           </>
         }
       />
