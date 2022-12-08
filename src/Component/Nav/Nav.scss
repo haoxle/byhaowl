@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 3rem;
+  height: 4rem;
 }
 
 .nav__title {
@@ -23,4 +23,27 @@
   background-color: $primary-colour;
   padding: 0.3rem 1rem 0.3rem 1rem;
   color: $tertiary_colour;
+}
+
+@media screen and (min-width: 0px) and (max-width: 849px) {
+  .nav-container {
+    background-color: $secondary-colour;
+    display: flex;
+    justify-content: space-around;
+    align-items: none;
+    height: 3rem;
+  }
+
+  .nav__title {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-family: $font-main;
+    background-color: transparent;
+  }
 }
