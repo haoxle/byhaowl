@@ -25,23 +25,23 @@
   display: flex;
   align-items: center;
   background-color: $secondary_colour;
-  height: 40rem;
+  height: 35rem;
   margin: 5rem 0 5rem 0;
   padding-bottom: 3rem;
   .work-img {
     background-color: $secondary_colour;
     margin-left: 10rem;
     &__img {
-      height: 30rem;
-      width: 30rem;
+      height: 25rem;
+      width: 25rem;
       border-radius: 5rem;
     }
     &__img2 {
       margin-top: 15rem;
       object-fit: fill;
       border-radius: 20rem;
-      height: 20rem;
-      width: 20rem;
+      height: 15rem;
+      width: 15rem;
       position: absolute;
       left: 30rem;
       // top: 70rem;
@@ -51,7 +51,7 @@
     margin-top: 15rem;
     background-color: transparent;
     color: $tertiary_colour;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     right: 6rem;
     position: absolute;
     text-align: right;
@@ -85,5 +85,267 @@
     letter-spacing: 0.1rem;
     padding: 0;
     margin: 0.5rem 0 0 0;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 849px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    padding: 0;
+    margin: 0;
+    &__img {
+      display: none;
+    }
+    &__desc {
+      width: 100%;
+      padding: 2rem 2rem 0 2rem;
+      margin: 0;
+      align-self: center;
+      text-align: justify;
+      font-size: 0.7rem;
+      font-family: $font-text;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.5rem;
+    }
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+    background-color: $secondary_colour;
+    height: 8rem;
+    margin: 5rem 0 5rem 0;
+    padding-bottom: 3rem;
+    .work-img {
+      background-color: $secondary_colour;
+      margin-left: 2rem;
+      &__img {
+        display: none;
+      }
+      &__img2 {
+        display: none;
+      }
+    }
+    .work-info {
+      margin-top: 7rem;
+      background-color: transparent;
+      color: $tertiary_colour;
+      font-size: 0.5rem;
+      right: 1rem;
+      position: absolute;
+      text-align: right;
+      .shop-link:hover {
+        color: $primary-colour;
+      }
+
+      .shop-link {
+        background-color: $secondary_colour;
+        text-decoration: none;
+        color: $tertiary_colour;
+      }
+    }
+  }
+
+  .logo-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0 7rem 0rem;
+    height: 1rem;
+    .byHaowl-logo {
+      height: 4rem;
+    }
+
+    .byHaowl-title {
+      font-family: $font-main;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+    }
+  }
+}
+@media screen and (min-width: 850px) and (max-width: 1299px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    padding: 3rem;
+    &__img {
+      height: 15rem;
+      border-radius: 5rem;
+      margin-right: 1rem;
+    }
+    &__desc {
+      width: 50rem;
+      align-self: center;
+      font-size: 1rem;
+      font-family: $font-text;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.5rem;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+    background-color: $secondary_colour;
+    height: 20rem;
+    margin: 5rem 0 5rem 0;
+    padding-bottom: 3rem;
+    .work-img {
+      background-color: $secondary_colour;
+      margin-left: 5rem;
+      &__img {
+        height: 13rem;
+        width: 13rem;
+        border-radius: 5rem;
+      }
+      &__img2 {
+        margin-top: 5rem;
+        object-fit: fill;
+        border-radius: 20rem;
+        height: 10rem;
+        width: 10rem;
+        position: absolute;
+        left: 12rem;
+        // top: 70rem;
+      }
+    }
+    .work-info {
+      margin-top: 8rem;
+      background-color: transparent;
+      color: $tertiary_colour;
+      font-size: 0.9rem;
+      right: 4rem;
+      position: absolute;
+      text-align: right;
+      .shop-link:hover {
+        color: $primary-colour;
+      }
+
+      .shop-link {
+        background-color: $secondary_colour;
+        text-decoration: none;
+        color: $tertiary_colour;
+      }
+    }
+  }
+
+  .logo-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0 7rem 0rem;
+    height: 3rem;
+    .byHaowl-logo {
+      height: 4rem;
+    }
+
+    .byHaowl-title {
+      font-family: $font-main;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1700px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+    padding: 3rem;
+    &__img {
+      height: 15rem;
+      border-radius: 5rem;
+      margin-right: 2rem;
+    }
+    &__desc {
+      width: 50rem;
+      align-self: center;
+      font-size: 1rem;
+      font-family: $font-text;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.5rem;
+      padding: 1rem;
+    }
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+    background-color: $secondary_colour;
+    height: 25rem;
+    margin: 5rem 0 5rem 0;
+    padding-bottom: 3rem;
+    .work-img {
+      background-color: $secondary_colour;
+      margin-left: 5rem;
+      &__img {
+        height: 17rem;
+        width: 17rem;
+        border-radius: 5rem;
+      }
+      &__img2 {
+        margin-top: 8rem;
+        object-fit: fill;
+        border-radius: 20rem;
+        height: 12rem;
+        width: 12rem;
+        position: absolute;
+        left: 15rem;
+        // top: 70rem;
+      }
+    }
+    .work-info {
+      margin-top: 15rem;
+      background-color: transparent;
+      color: $tertiary_colour;
+      font-size: 1rem;
+      right: 4rem;
+      position: absolute;
+      text-align: right;
+      .shop-link:hover {
+        color: $primary-colour;
+      }
+
+      .shop-link {
+        background-color: $secondary_colour;
+        text-decoration: none;
+        color: $tertiary_colour;
+      }
+    }
+  }
+
+  .logo-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0 7rem 0rem;
+    height: 5rem;
+    .byHaowl-logo {
+      height: 6rem;
+    }
+
+    .byHaowl-title {
+      font-family: $font-main;
+      font-weight: 600;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+    }
   }
 }
