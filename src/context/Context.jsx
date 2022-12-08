@@ -3,20 +3,16 @@ import { createContext } from "react";
 
 export const Cartcontext = createContext();
 export const Context = (props) => {
-  const checkDuplicates = (arr) => {
-    const valueArr = arr.map((item) => {
-      return item.name;
-    });
-    const isDuplicate = valueArr.some((item, idx) => {
-      console.log(item);
-      return valueArr.indexOf(item) === idx;
-    });
-
-    console.log(isDuplicate);
-    return isDuplicate;
-  };
   const reducer = (state, action) => {
     const flattened = state.flat(1);
+    const valueArr = flattened.map((item) => {
+      return item.id;
+    });
+    const isDuplicate = valueArr.some((item, idx) => {
+      return valueArr.indexOf(item) == idx;
+    });
+    console.log(isDuplicate);
+
     const increase = flattened.map((item) => {
       if (item.stock === item.quantity) {
         return item;
@@ -37,9 +33,12 @@ export const Context = (props) => {
 
     switch (action.type) {
       case "ADD":
-        if (checkDuplicates(flattened)) {
-          return flattened;
-        } else return [...flattened, action.payload];
+        const checkCandle = state.some(
+          (varArr) => varArr[0].id === action.payload[0].id
+        );
+        if (checkCandle) {
+          return state;
+        } else return [...state, action.payload];
       case "INCREASE":
         return [increase];
       case "DECREASE":
