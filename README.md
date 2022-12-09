@@ -3,9 +3,14 @@
 This project is my final project as part of my course with Nology. My project is a full stack project and the readme of my byHaowl-api will detail the installation process.
 This project is created via react, java and a database(specifically mysql). 
 The final project is a e-comerce wesite selling candles and ceramics. It also focuses on mental health and provides users with words of affirmation.
-<img width="2981" alt="Screenshot 2022-12-09 at 10 21 19" src="https://user-images.githubusercontent.com/111334034/206683850-e73c39a6-ff9c-4de7-94fb-1623f5ca07bf.png">
+<img width="2978" alt="Screenshot 2022-12-09 at 10 20 55-min" src="https://user-images.githubusercontent.com/111334034/206688138-9967318b-dba0-4749-8ae8-7bdacc97bd08.png">
+<img width="2982" alt="Screenshot 2022-12-09 at 10 21 05-min" src="https://user-images.githubusercontent.com/111334034/206688141-d7192734-b220-40d1-847c-63c674af539a.png">
+<img width="2981" alt="Screenshot 2022-12-09 at 10 21 19-min" src="https://user-images.githubusercontent.com/111334034/206688145-ad1b57e6-23a6-4fef-b7b3-4768a4839123.png">
+<img width="2990" alt="Screenshot 2022-12-09 at 10 21 30-min" src="https://user-images.githubusercontent.com/111334034/206688147-c2ebd883-6722-4742-8f5a-7e2b6c261e3c.png">
+<img width="2992" alt="Screenshot 2022-12-09 at 10 22 19-min" src="https://user-images.githubusercontent.com/111334034/206688148-6362e215-54b8-4f6c-992a-4214dec37e21.png">
 
-## Dependencoes
+
+## Dependencies
 
 In the project directory, you can run:
 
