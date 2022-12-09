@@ -77,7 +77,7 @@
     }
   }
 }
-@media screen and (min-width: 0px) and (max-width: 1500px) {
+@media screen and (min-width: 0px) and (max-width: 1400px) {
   .candleInfo-container {
     display: flex;
     flex-direction: column;
@@ -156,6 +156,87 @@
           font-size: 1.5rem;
           font-weight: 200;
           margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 2000px) {
+  .candleInfo-container {
+    display: flex;
+    padding: 3rem;
+    .image-container {
+      &__candle {
+        height: 35rem;
+        width: 35rem;
+      }
+    }
+    .information-container {
+      margin-top: 0.7rem;
+      width: 100%;
+      .link-container {
+        margin: 0 4rem 0 4rem;
+        padding: 0 0 1rem 1rem;
+
+        &__back {
+          color: black;
+          text-decoration: none;
+          font-size: 1.1rem;
+          font-weight: 500;
+          font-family: $font-text;
+          letter-spacing: 0.1rem;
+          padding-right: 1rem;
+        }
+        .link-container__back:hover,
+        .link-container__bag:hover {
+          color: #6d435a;
+        }
+        &__bag {
+          border: none;
+          font-size: 1.1rem;
+          font-weight: 500;
+          font-family: $font-text;
+          letter-spacing: 0.1rem;
+          padding-left: 1rem;
+          border-left: 0.1rem solid black;
+        }
+      }
+      .productMain {
+        margin: 0.5rem 4rem 1rem 4rem;
+        padding: 0 0 1rem 1rem;
+        border-bottom: 0.1rem solid black;
+        &__name {
+          font-size: 1.7rem;
+          font-family: $font-text;
+          letter-spacing: 0.2rem;
+          padding-bottom: 1.7rem;
+        }
+        &__price {
+          font-size: 1.5rem;
+          font-weight: 400;
+
+          font-family: $font-text;
+          letter-spacing: 0.1rem;
+          padding-bottom: 1rem;
+        }
+      }
+
+      .productDesc,
+      .productMisc {
+        margin: 0 4rem 1.5rem 4rem;
+        padding: 0 0 1rem 1rem;
+        border-bottom: 0.1rem solid black;
+        span {
+          font-family: $font-text;
+          font-size: 1rem;
+          font-weight: 500;
+        }
+        p {
+          font-family: $font-text;
+          font-size: 1rem;
+          font-weight: 200;
+          margin-top: 0.9rem;
         }
       }
     }

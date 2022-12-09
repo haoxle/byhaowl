@@ -265,7 +265,7 @@
     display: flex;
     justify-content: center;
     height: 15rem;
-    padding: 3rem;
+    padding: 5rem;
     &__img {
       height: 15rem;
       border-radius: 5rem;
@@ -274,7 +274,7 @@
     &__desc {
       width: 50rem;
       align-self: center;
-      font-size: 1rem;
+      font-size: 1.3rem;
       font-family: $font-text;
       letter-spacing: 0.1rem;
       word-spacing: 0.5rem;
