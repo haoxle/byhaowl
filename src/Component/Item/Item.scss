@@ -4,10 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 1.5rem;
+  margin: 2.3rem;
   &__candle {
-    height: 25rem;
-    width: 25rem;
+    height: 30rem;
+    width: 30rem;
   }
   &__candle:hover {
     opacity: 0.6;
@@ -28,5 +28,38 @@
   &__bag {
     width: 5rem;
     align-self: center;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 2000px) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1.5rem;
+    &__candle {
+      height: 25rem;
+      width: 25rem;
+    }
+    &__candle:hover {
+      opacity: 0.6;
+    }
+    &__info {
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+      &--name,
+      &--price {
+        font-size: 1.7rem;
+        font-family: $font-text;
+        letter-spacing: 0.1rem;
+        color: #031927;
+        opacity: 0.9;
+      }
+    }
+    &__bag {
+      width: 5rem;
+      align-self: center;
+    }
   }
 }
