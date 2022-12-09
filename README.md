@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# By Haowl
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is my final project as part of my course with Nology. My project is a full stack project and the readme of my byHaowl-api will detail the installation process.
+This project is created via react, java and a database(specifically mysql). 
+The final project is a e-comerce wesite selling candles and ceramics. It also focuses on mental health and provides users with words of affirmation.
+<img width="2981" alt="Screenshot 2022-12-09 at 10 21 19" src="https://user-images.githubusercontent.com/111334034/206683850-e73c39a6-ff9c-4de7-94fb-1623f5ca07bf.png">
 
-## Available Scripts
+## Dependencoes
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ensure that in apiUtils, the local host is coherent with java.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `npm run start`
 
-### `npm test`
+## Motivation
+This project was inspired by my candle business. I wanted to have a more real life application to my final project and thought as I make candles, it would make sense to create a website for it. This is an ongoing project and will constantly be updated post course.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Built With
+- React
+- Javascript
+- SASS
+- Java
+- Database (mySQL)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Features
+I implemented useContext, a new concept I had to learn during the project to implement my shopping basket. I wanted to use redux package but due to the time constraints this was not possible
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+```export const Context = (props) => {
+  const reducer = (state, action) => {
+    const flattened = state.flat(1);
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    const increase = flattened.map((item) => {
+      if (item.stock === item.quantity) {
+        return item;
+      }
+      if (item.id === action.payload.id) {
+        return { ...item, quantity: item.quantity + 1 };
+      } else return item;
+    });
+    const remove = flattened.filter((item) => item.id !== action.payload.id);
+    const decrease = flattened.map((item) => {
+      if (item.quantity === 0) {
+        return item;
+      }
+      if (item.id === action.payload.id) {
+        return { ...item, quantity: item.quantity - 1 };
+      } else return item;
+    });
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    switch (action.type) {
+      case "ADD":
+        const checkCandle = state.some(
+          (varArr) => varArr[0].id === action.payload[0].id
+        );
+        if (checkCandle) {
+          return state;
+        } else return [...state, action.payload];
+      case "INCREASE":
+        return [increase];
+      case "DECREASE":
+        return [decrease];
+      case "REMOVE":
+        return remove;
+      default:
+        return flattened;
+    }
+  };
+  const [state, dispatch] = useReducer(reducer, []);
+  const info = { state, dispatch };
+  return (
+    <Cartcontext.Provider value={info}> {props.children}</Cartcontext.Provider>
+  );
+};
+ ``` 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Credits
+-N/A
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
